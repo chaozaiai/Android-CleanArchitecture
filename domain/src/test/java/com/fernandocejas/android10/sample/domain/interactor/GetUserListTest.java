@@ -44,7 +44,6 @@ public class GetUserListTest {
 
   @Test
   public void testGetUserListUseCaseObservableHappyCase() {
-    getUserList.buildUseCaseObservable();
 
     verify(mockUserRepository).users();
     verifyNoMoreInteractions(mockUserRepository);
